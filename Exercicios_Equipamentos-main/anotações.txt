@@ -1,0 +1,21 @@
+RELACIONAMENTOS DE TABELA:
+    CARGOS
+
+
+    USUARIOS{
+        NOME,
+        CARGO[fk]
+    };
+
+    COMENTARIOS{
+        DATA,
+        USUARIO [fk],
+        TEXTO,
+    };
+
+   EQUIPAMENTOS{
+        NOME,
+        DESCRIÇÃO,
+        COMENTARIOS [fk],
+        IMAGEM,
+    }
